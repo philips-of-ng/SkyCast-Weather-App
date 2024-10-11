@@ -91,12 +91,12 @@ const Weather = () => {
 
   return (
     <div className='container'>
-      <div className='input-container'>
+      <form className='input-container' onSubmit={handleSearch}>
         <input ref={inputRef} className='input-input' type="text" placeholder='Enter City Name...' />
         <button onClick={handleSearch} className='input-btn'>
           <img src={search_icon} alt="Search" />
         </button>
-      </div>
+      </form>
 
       {loading ? (
         <div className='loading-container'>
