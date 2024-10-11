@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+:root {
+  --the-light: #C1B7E1;
+  --the-dark: #32255A;
+  --the-mid: #6c5aa8;
+  --the-top-color: #3C2E6C;
+}
+
+.app {
+  background-color: var(--the-dark) !important;
+  height: 100vh !important;
+  width: 100vw !important;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

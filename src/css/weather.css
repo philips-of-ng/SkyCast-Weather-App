@@ -1,0 +1,170 @@
+:root {
+  --the-light: #C1B7E1;
+  --the-dark: #32255A;
+  --the-mid: #6c5aa8;
+  --the-top-color: #3C2E6C;
+}
+
+.container {
+  min-height: 95vh;
+  background-color: var(--the-dark);
+  width: 100vw;
+}
+
+.input-container {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.input-container input {
+  width: 80%;
+  height: 100%;
+  padding-left: 20px;
+  padding-block: 10px;
+  color: #555;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.input-container input::placeholder {
+  font-size: 20px;
+}
+
+.input-container button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+/* ----------------- */
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85vh;
+}
+
+/* ------------------ */
+
+.section-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-two img {
+  width: 170px;
+}
+
+/* ------------------- */
+
+.section-three {
+  border: 3px solid var(--the-light);
+  padding: 10px 0;
+  border-radius: 20px;
+}
+
+.temp {
+  font-size: 3.5em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.location {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.date {
+  text-align: center;
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+/* ---------------------------- */
+
+.section-four {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) !important;
+  padding: 20px;
+  row-gap: 20px;
+  column-gap: 10px;
+  padding-block: 30px;
+}
+
+.section-four .col {
+  border: 3px solid var(--the-light);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.col div > p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.col img {
+  width: 25px;
+  height: 25px;
+}
+
+.col div p {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.loading-container {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.blinking-text {
+  animation: blink 1.5s infinite;
+}
+
+.error-message {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@media (max-width: 767px) {
+  .container {
+    width: 100vw !important;
+  }
+
+  .section-three {
+    width: 90%;
+    margin-inline: auto;
+  }
+}
